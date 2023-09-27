@@ -50,6 +50,6 @@ server.delete('/videos/:id', async (request, reply) => {
 
 server.listen({
   
-  host: ("RENDER" in process.env) ? `0.0.0.0` : `localhost`,
+  host: `0.0.0.0`,
   port: process.env.PORT ?? 3333,
 })
